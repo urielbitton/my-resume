@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Uriel Bitton - Software Engineer Resume</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Example description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Lato;
+      }
+
+      :root {
+        --color: #ffab0f;
+      }
+      img {
+        object-fit: cover;
+      }
+      a {
+        text-decoration: none;
+      }
+      .grid {
+        position: relative;
+        width: 1100px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .clear {
+        clear: both;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      nav {
+        position: relative;
+        width: 100%;
+        background: #222;
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;
+        color: #fff;
+        padding: 30px;
+      }
+      nav h3 {
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      nav h3 small {
+        color: #ddd;
+        font-size: 12px;
+        display: block;
+        margin-top: 10px;
+      }
+      nav h6 {
+        color: #ddd;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 7px 0;
+        text-align: left;
+      }
+      nav h6 a {
+        color: var(--color);
+      }
+      nav div {
+        text-align: center;
+        width: 200px;
+        margin: auto;
+      }
+      nav h6 i {
+        margin-right: 10px;
+        font-size: 15px;
+      }
+      nav img {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        background: #fff;
+        margin: auto;
+      }
+      .page {
+        position: relative;
+        background: #fafafa;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 50px;
+        padding: 30px;
+      }
+      .page .left > div,
+      .page .right > div {
+        margin-bottom: 10px;
+      }
+      .page h4 {
+        font-size: 20px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .page h5 {
+        color: var(--color);
+        font-weight: 500;
+        width: 90%;
+      }
+      .page h5 span {
+        float: right;
+      }
+      .page p {
+        font-size: 13px;
+        color: #777;
+        line-height: 1.4;
+        width: 90%;
+      }
+      .page a {
+        color: #7303fc;
+      }
+      .page a:hover {
+        text-decoration: underline;
+      }
+      .page .left,
+      .page .right {
+        padding: 20px;
+      }
+      .page ul {
+        margin: 5px 0;
+      }
+      .page ul li {
+        font-size: 13px;
+        color: #777;
+        line-height: 1.4;
+        width: 85%;
+      }
+      .skillsdiv {
+        padding: 20px;
+        padding-left: 0;
+      }
+      .skillsdiv > div {
+        width: 100%;
+        display: block;
+        font-size: 13px;
+        clear: both;
+        padding: 5px 0;
+      }
+      .skillsdiv > div span {
+        float: left;
+        width: 140px;
+      }
+      .skillsdiv h5 {
+        margin: 5px 0;
+      }
+      .skillsdiv .skillbar {
+        position: relative;
+        height: 10px;
+        background: #ddd;
+        float: right;
+        margin-left: 10px;
+        top: 4px;
+        width: 280px;
+      }
+      .skillsdiv .skillbar::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        background: var(--color);
+      }
+      .s60::after {
+        width: 60%;
+      }
+      .s65::after {
+        width: 65%;
+      }
+      .s70::after {
+        width: 70%;
+      }
+      .s75::after {
+        width: 75%;
+      }
+      .s80::after {
+        width: 80%;
+      }
+      .s85::after {
+        width: 85%;
+      }
+      .s875::after {
+        width: 87.5%;
+      }
+      .s90::after {
+        width: 90%;
+      }
+      .s925::after {
+        width: 92.5%;
+      }
+      .s95::after {
+        width: 95%;
+      }
+      .s975::after {
+        width: 97.5%;
+      }
+      .s100::after {
+        width: 100%;
+      }
+
+      .langs span {
+        position: relative;
+        float: right;
+      }
+      .strengths > div {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        background: var(--color);
+        color: #333;
+        border-radius: 6px;
+        font-size: 13px;
+        opacity: 0.8;
+      }
+      .strengths h4 {
+        margin-bottom: 10px;
+      }
+      .portfolio p,
+      .socials p {
+        margin: 5px 0;
+      }
+      .portfolio h4,
+      .socials h4 {
+        margin-bottom: 10px;
+      }
+      .portfolio p span,
+      .socials p span {
+        float: right;
+        color: var(--color);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <nav>
+        <h3>
+          Uriel Bitton<small
+            >Software Engineer | Cloud Engineer | Solutions Architect</small
+          >
+        </h3>
+        <div>
+          <h6><i class="fas fa-envelope"></i>urielas1@gmail.com</h6>
+          <h6><i class="fas fa-phone"></i>438.630.2471</h6>
+          <h6><i class="fas fa-map-marker-alt"></i>Montreal, Canada</h6>
+        </div>
+        <div>
+          <h6>
+            Website:
+            <a href="https://linkedin.com/in/urielbitton" target="_blank"
+              >Uriel Bitton</a
+            >
+          </h6>
+          <h6>
+            Portfolio:
+            <a href="https://github.com/urielbitton" target="_blank">GitHub</a>
+          </h6>
+        </div>
+      </nav>
+
+      <div class="page">
+        <div class="left">
+          <div>
+            <h4>Profile</h4>
+            <p>
+              <b
+                >Solutions Architect, Software & Cloud Engineer, Senior Full
+                Stack Developer with 13 years of experience (6 as senior
+                architect).</b
+              >
+              <br /><br />As a solutions architect and cloud engineer, I have
+              successfully architected numerous projects with my expertise in
+              serverless and micro-services architectures as well as cost-aware
+              architectures, and designing scalable, highly available, reliable
+              and performant cloud solutions as per best architectural
+              practices. With my expertise and leadership skills, i have helped
+              companies and business owners save time and money and helped them
+              grow their businesses online. I'm also an AWS Community Builder
+              and AWS Certified.
+            </p>
+          </div>
+
+          <div>
+            <br />
+            <h4>Work Experiences</h4>
+            <br />
+            <h5>Shelcaster Media <span>August 2024 - Now</span></h5>
+            <ul>
+              <li><b>Position: CTO</b></li>
+              <li>
+                Built and architected production-grade applications for clients
+                like The Willis Law group, CPI and other big law firms.
+              </li>
+              <li>
+                Created a strong leadership for consultants and instated best
+                practices and architectures
+              </li>
+              <li>Increased revenue with cloud architectures by ~30%</li>
+              <li>
+                Cost optimization & DynamoDB database migration, serverless
+                architectures reduced cloud costs by 65%.
+              </li>
+              <li>
+                <i
+                  ><b
+                    >Technologies used: AWS (DynamoDB, Lambda, API GW, S3,
+                    EventBridge, SQS, SNS, SES, AppSync), Serverless Framework,
+                    Node JS, React JS.</b
+                  ></i
+                >
+              </li>
+            </ul>
+            <br />
+            <h5>Petal MD <span>July 2023 - July 2024</span></h5>
+            <ul>
+              <li><b>Position: Senior Lead Engineer</b></li>
+              <li>
+                Spearheaded the security initiative in the team - managed,
+                created &amp; implemented all the security features for the
+                company's mobile app used by thousands of doctors in Quebec.
+              </li>
+              <li>
+                As senior lead engineer I led the team of mobile developers by
+                instating best coding practices (SOLID, OOP) and engineering
+                practices (UML diagrams, use case, system design flow charts,
+                etc).
+              </li>
+              <li>
+                Created architectural designs and trained other developers on
+                best practices of applications architectures
+              </li>
+              <li>
+                Created documentation for several features, adhering to
+                well-designed and well-developed product features
+              </li>
+              <li>
+                Worked in collaboration with external teams to help and mentor
+                developers.
+              </li>
+              <li>
+                Delivered &amp; published scalable and reliable,
+                enterprise-level mobile apps to the App store and Play store
+              </li>
+              <li>
+                <i
+                  ><b
+                    >Technologies used: AWS, Google Firebase, JavaScript, React,
+                    Node JS, Jest, React Native</b
+                  ></i
+                >
+              </li>
+            </ul>
+            <br />
+            <h5>Ecommerce Canada <span>Dec 2021 - July 2023</span></h5>
+            <ul>
+              <li>
+                <b>Position: Director of Technology (Solutions Architect)</b>
+              </li>
+              <li>
+                As solutions architect and cloud engineer, I architected
+                software solutions and projects, designed their development
+                cycles from business requirements to technical specs,
+                spearheaded stakeholder meetings and acted as the team lead,
+                mentoring and helping the developers and designers on the team.
+              </li>
+              <li>
+                Initiated and conducted numerous meetings with clients and
+                product owners to analyze and perfect products and offer
+                business and technical guidance
+              </li>
+              <li>
+                Managed multiple projects simultaneously using various
+                tools/platforms such as AWS, and Google Cloud platforms.
+              </li>
+              <li>
+                Managed multiple intermediate and senior devs, supervised and
+                mentored them on daily programming tasks
+              </li>
+              <li>
+                Developed high-end, enterprise-level and high quality web apps
+                using various JavaScript frameworks and backend technologies
+              </li>
+              <li>
+                <i
+                  ><b
+                    >Technologies used: AWS DynamoDB, Lambda, S3, API Gateway,
+                    AppSync, IAM, JS, React, Node JS, Jest</b
+                  ></i
+                >
+              </li>
+            </ul>
+            <br />
+            <h5>Cosior Inc. <span>2021-2022</span></h5>
+            <ul>
+              <li><b>Position:</b> Senior Engineer</li>
+              <li>
+                Built and maintained 4 enterprise-level apps used by hundreds of
+                users
+              </li>
+              <li>Mobile app development using Ionic + React frameworks</li>
+              <li>Designed backend of apps with Firebase</li>
+              <li>Helped the company grow under my leadership</li>
+            </ul>
+            <h5>Levy Pilotte LLP <span>2017-2018</span></h5>
+            <ul>
+              <li><b>Position:</b> Lead Designer for the IT team</li>
+              <li>
+                Designed modern and performant websites for the company used by
+                hundreds of users
+              </li>
+              <li>Led the IT department as fullstack developer</li>
+              <li>Provided high quality websites for company's clients</li>
+            </ul>
+            <h5>R11 Solutions Inc.<span>2018-2020</span></h5>
+            <ul>
+              <li><b>Position:</b> Front-end Developer & UI/UX designer</li>
+              <li>
+                Provided beautiful, responsive web designs and web apps for the
+                company's clients
+              </li>
+              <li>Project management with github & slack</li>
+            </ul>
+            <h5>App & Web Development Consultant <span>2012-2025</span></h5>
+            <ul>
+              <li>Fullstack development of web apps for clients</li>
+              <li>
+                Designed Modern SPAs using various JS frameworks (react,
+                angular, ember, Reactor JS)
+              </li>
+              <li>
+                Built E-commerce websites for clients and helped them sell
+                products online
+              </li>
+              <li>
+                Static web designs using Bootstrap, Javascript, Jquery, PHP and
+                various CSS frameworks.
+              </li>
+              <li>
+                Developed many web apps with a small team, using github, jira,
+                bitbucket.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Education</h4>
+            <h5>Concordia University <span>2016-2019</span></h5>
+            <ul>
+              <li>Bachelor's Degree in Computer Science Software Engineer</li>
+              <li>
+                SQL, Java, C++, Ruby, JavaScript, Python, APIs, Machine Learning
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <h4>Skills</h4>
+          <div class="skillsdiv">
+            <div>
+              <span>AWS</span>
+              <div class="skillbar s95"></div>
+            </div>
+            <div>
+              <span>Google Cloud</span>
+              <div class="skillbar s85"></div>
+            </div>
+            <div>
+              <span>Serverless</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>Amazon DynamoDB</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>AWS Lambda</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>API Gateway</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>JavaScript</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>React JS</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>React Native</span>
+              <div class="skillbar s90"></div>
+            </div>
+            <div>
+              <span>TypeScript</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>HTML + CSS</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div>
+              <span>SQL</span>
+              <div class="skillbar s90"></div>
+            </div>
+            <div>
+              <span>NoSQL</span>
+              <div class="skillbar s100"></div>
+            </div>
+            <div class="clear"></div>
+            <p>Other skills: Java, PHP, C++, Python, Next JS</p>
+          </div>
+          <div class="langs">
+            <h4>Languages</h4>
+            <p>English <span>Native</span></p>
+            <p>French <span>Fluent</span></p>
+          </div>
+
+          <div class="achieve langs">
+            <h4>Certificates</h4>
+            <p>AWS <span>Cloud practitioner</span></p>
+            <p>AWS <span>Database Developer (taking)</span></p>
+            <p>Google <span>Profession Database Engineer (taking)</span></p>
+          </div>
+
+          <div class="achieve">
+            <h4>Achievements</h4>
+            <p>#16 best Amazon DynamoDB developers in the world</p>
+            <p>AWS Community Builder</p>
+            <p>Built a small startup software consulting agency by myself.</p>
+          </div>
+
+          <div class="strengths">
+            <h4>Strengths</h4>
+            <div>Leader</div>
+            <div>Team Player</div>
+            <div>Creative</div>
+            <div>Evaluating Tradeoffs</div>
+            <div>Quick Learner</div>
+          </div>
+          <div class="clear"></div>
+          <div class="portfolio">
+            <h4>Links</h4>
+            <p>Website <span>www.urielbitton.com</span></p>
+            <p>AWS Blog <span>https://medium.com/@atomicsdigital</span></p>
+            <p>Portfolio <span>www.github.com/urielbitton</span></p>
+          </div>
+
+          <div class="socials">
+            <h4>Socials</h4>
+            <p>Twitter <span>twitter.com/urielbitton</span></p>
+            <p>LinkedIn <span>linkedin.com/in/urielbitton</span></p>
+            <p>Substack <span>urielbitton.substack.com/</span></p>
+            <p>GitHub <span>www.github.com/urielbitton</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
